@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Asistente Para Aprender R STUDIO</title>
+      <link rel="stylesheet" href="css/EstiloMenuLat.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="btn">
+         <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+         <div class="text">
+            Menu
+         </div>
+         <ul>
+            <li class="active"><a href="#">Principal</a></li>
+            <li>
+               <a href="#" class="feat-btn">Capitulos
+               <span class="fas fa-caret-down first"></span>
+               </a>
+               <ul class="feat-show">
+                  <li><a href="CartasContenidoCapitulos.html">1. Introduccion</a></li>
+                  <li><a href="#">2. Tipos de Objetos</a></li>
+                  <li><a href="#">3. Guia de Estilos</a></li>
+                  <li><a href="#">4.Ingresando Datos a R</a></li>
+                  <li><a href="#">5.Funciones Basicas de R</a></li>
+                  <li><a href="#">6.Instrucciones de control</a></li>
+                  <li><a href="#">7.Creación de funciones en R</a></li>
+                  <li><a href="#">8.Lectura de bases de datos</a></li>
+                  <li><a href="#">9.Tablas de frecuencia</a></li>
+                  <li><a href="#">10.Medidas de tendencia central</a></li>
+                  <li><a href="#">11.Medidas de variabilidad</a></li>
+                  <li><a href="#">12.Medidas de posición</a></li>
+                  <li><a href="#">13.Medidas de correlación</a></li>
+                  <li><a href="#">14.Distribuciones discretas</a></li>
+                  <li><a href="#">15.Distribuciones continuas</a></li>
+                  <li><a href="#">16.Verosimilitud</a></li>
+                  <li><a href="#">17.Selección de la distribución</a></li>
+                  <li><a href="#">18.studiando la normalidad</a></li>
+                  <li><a href="#">19.Intervalos de confianza</a></li>
+                  <li><a href="#">20.Prueba de hipótesis</a></li>
+                  <li><a href="#">21.Aproximación de integrales</a></li>
+                  <li><a href="#">22.Curiosidades</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#" class="serv-btn">Juegos
+               <span class="fas fa-caret-down second"></span>
+               </a>
+               <ul class="serv-show">
+                  <li><a href="#">1. Ubicar en el Lugar Correcto</a></li>
+                  <li><a href="#">2. Encontrar las Tarjetas Iguales</a></li>
+                  <li><a href="#">3. Responde Divirtiendote</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Consola R Studio</a></li>
+         </ul>
+      </nav>
+      <div class="content">
+         <div class="header">
+            Bienvendio a Rlearning
+         </div>
+         <p>
+            Educacion sin limites
+         <p> registrate y aprende
+            <p> RStudio totalmene gratis
+               <p> facil y divertido
+         </p>
+      </div>
+      <script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+   </body>
+</html>
